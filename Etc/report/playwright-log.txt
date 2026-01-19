@@ -1,0 +1,85 @@
+{"level":30,"time":"2026-01-19T10:00:50.229Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Listening on 127.0.0.1:63206"}
+(node:32604) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2026-01-19T10:00:50.674Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-01-19T10:00:50.918Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2026-01-19T10:00:50.919Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-01-19T10:00:50.918Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-01-19T10:00:50.925Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-19T10:00:50.925Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2026-01-19T10:00:50.939Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Changed active context"}
+{"level":30,"time":"2026-01-19T10:00:51.092Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-19T10:00:51.092Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Changed active page"}
+{"level":30,"time":"2026-01-19T10:00:51.875Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-19T10:00:51.880Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method setViewportSize"}
+{"level":30,"time":"2026-01-19T10:00:51.888Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method setViewportSize"}
+{"level":30,"time":"2026-01-19T10:00:51.899Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2026-01-19T10:00:51.899Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","Take screenshot with options: ":{"path":"C:\\Users\\Pitinai.c\\OneDrive - doppiotech.com\\Documents\\GitHub\\pitinai_c_doppio\\old_file\\report\\browser\\screenshot\\Output\\test_fail.png.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2026-01-19T10:00:52.094Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2026-01-19T10:00:52.097Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-01-19T10:00:52.107Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Removed page=fa779bf6-388e-429f-baab-70389415d94e from context=993b1078-b852-449f-8f70-2aedff0f60ea page stack"}
+{"level":30,"time":"2026-01-19T10:00:52.719Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13122:59)
+    at PlaywrightServer.setTimeout (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13370:57)
+    at Object.onReceiveHalfClose (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-01-19T10:00:52.746Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-19T10:00:52.747Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-19T10:00:52.750Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-19T10:00:52.750Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-19T10:00:52.754Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-01-19T10:00:52.942Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Adding browser to stack: chromium, version: 136.0.7103.25"}
+{"level":30,"time":"2026-01-19T10:00:52.942Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-01-19T10:00:52.942Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-01-19T10:00:52.947Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-01-19T10:00:52.947Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2026-01-19T10:00:52.957Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Changed active context"}
+{"level":30,"time":"2026-01-19T10:00:53.113Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Video path: undefined"}
+{"level":30,"time":"2026-01-19T10:00:53.113Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Changed active page"}
+{"level":30,"time":"2026-01-19T10:00:54.136Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method newPage"}
+{"level":30,"time":"2026-01-19T10:00:54.141Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method setViewportSize"}
+{"level":30,"time":"2026-01-19T10:00:54.150Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method setViewportSize"}
+{"level":30,"time":"2026-01-19T10:00:54.159Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method closeBrowser"}
+{"level":30,"time":"2026-01-19T10:00:54.168Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Removed page=db07b751-1c08-4c4d-a345-50b72cff2c76 from context=d8407f16-9b2f-415b-b16a-15386b9409cb page stack"}
+{"level":30,"time":"2026-01-19T10:00:54.466Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method closeBrowser"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13122:59)
+    at PlaywrightServer.setTimeout (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13370:57)
+    at Object.onReceiveHalfClose (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-01-19T10:00:54.489Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-19T10:00:54.489Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:12226:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13122:59)
+    at PlaywrightServer.setTimeout (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js:13370:57)
+    at Object.onReceiveHalfClose (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:530:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-01-19T10:00:54.514Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-19T10:00:54.514Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-01-19T10:00:54.553Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-01-19T10:00:54.553Z","pid":32604,"hostname":"LAPTOP-LP6VBUM8","msg":"End of node method closeAllBrowsers"}
