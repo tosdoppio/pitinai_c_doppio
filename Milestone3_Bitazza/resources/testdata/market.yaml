@@ -1,0 +1,12 @@
+market:
+  # รายชื่อเหรียญที่ต้องเช็คว่ามีอยู่ในตาราง
+  coin_names_check:
+    - Bitcoin
+    - Ethereum
+    - Moo Deng
+    - USD Tether
+
+  # กำหนดเงื่อนไขราคาของเหรียญ
+  price_check:
+    - coin: Ethereum
+      min_price: 30000

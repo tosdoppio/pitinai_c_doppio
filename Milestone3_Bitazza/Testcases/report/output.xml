@@ -1,334 +1,295 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.12.5 on win32)" generated="2026-01-16T16:53:25.384960" rpa="false" schemaversion="5">
-<suite id="s1" name="MS 003" source="C:\Users\Pitinai.c\OneDrive - doppiotech.com\Documents\GitHub\automate-training\Milestone3\Testcases\MS_003.robot">
-<test id="s1-t1" name="Open Web and verify coin" line="74">
-<kw name="Open Web">
+<robot generator="Robot 7.2 (Python 3.12.5 on win32)" generated="2026-01-19T16:15:04.931658" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 001" source="C:\Users\Pitinai.c\OneDrive - doppiotech.com\Documents\GitHub\pitinai_c_doppio\Milestone3_Bitazza\testcases\TC_001.robot">
+<test id="s1-t1" name="TC_001 - Verify Coin Name And Price" line="5">
+<kw name="Open Browser" owner="common">
 <kw name="New Browser" owner="Browser">
-<msg time="2026-01-16T16:53:25.565300" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Pitinai.c\\OneDrive - doppiotech.com\\Documents\\GitHub\\automate-training\\Milestone3\\Testcases\\report\\browser\\traces\\temp\\9e6f7de2-1192-4149-a7b9-fd2d2ad0cf91"}</msg>
-<msg time="2026-01-16T16:53:25.599920" level="INFO">Starting Browser process C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:57076</msg>
-<msg time="2026-01-16T16:53:27.086856" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Pitinai.c\\OneDrive - doppiotech.com\\Documents\\GitHub\\automate-training\\Milestone3\\Testcases\\report\\browser\\traces\\temp\\9e6f7de2-1192-4149-a7b9-fd2d2ad0cf91"}</msg>
+<msg time="2026-01-19T16:15:05.166885" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\Pitinai.c\\OneDrive - doppiotech.com\\Documents\\GitHub\\pitinai_c_doppio\\Milestone3_Bitazza\\testcases\\report\\browser\\traces\\temp\\31a60b15-4c02-442e-80f4-1cf227119d1f"}</msg>
+<msg time="2026-01-19T16:15:05.201552" level="INFO">Starting Browser process C:\Users\Pitinai.c\AppData\Local\Programs\Python\Python312\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:49343</msg>
+<msg time="2026-01-19T16:15:06.721717" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\Pitinai.c\\OneDrive - doppiotech.com\\Documents\\GitHub\\pitinai_c_doppio\\Milestone3_Bitazza\\testcases\\report\\browser\\traces\\temp\\31a60b15-4c02-442e-80f4-1cf227119d1f"}</msg>
 <arg>chromium</arg>
 <arg>headless=False</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<status status="PASS" start="2026-01-16T16:53:25.565300" elapsed="1.521556"/>
+<status status="PASS" start="2026-01-19T16:15:05.166885" elapsed="1.556840"/>
 </kw>
 <kw name="New Page" owner="Browser">
-<msg time="2026-01-16T16:53:29.955036" level="INFO">Successfully initialized new page object and opened url: https://bitazza.co.th/home</msg>
-<msg time="2026-01-16T16:53:29.955036" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<msg time="2026-01-19T16:15:09.259323" level="INFO">Successfully initialized new page object and opened url: https://bitazza.co.th/home</msg>
+<msg time="2026-01-19T16:15:09.259323" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
 <arg>${url}</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Open a new Page.</doc>
-<status status="PASS" start="2026-01-16T16:53:27.088864" elapsed="2.866172"/>
+<status status="PASS" start="2026-01-19T16:15:06.723725" elapsed="2.535598"/>
 </kw>
 <kw name="Set Viewport Size" owner="Browser">
-<msg time="2026-01-16T16:53:29.989971" level="INFO">Set viewport size to: [object Object]</msg>
+<msg time="2026-01-19T16:15:09.294223" level="INFO">Set viewport size to: [object Object]</msg>
 <arg>1920</arg>
 <arg>1080</arg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Sets current Pages viewport size to specified dimensions.</doc>
-<status status="PASS" start="2026-01-16T16:53:29.956033" elapsed="0.033938"/>
+<status status="PASS" start="2026-01-19T16:15:09.260915" elapsed="0.035323"/>
 </kw>
-<arg>${url}</arg>
-<status status="PASS" start="2026-01-16T16:53:25.565300" elapsed="4.425900"/>
+<arg>${bitazza.url}</arg>
+<status status="PASS" start="2026-01-19T16:15:05.166885" elapsed="4.129353"/>
 </kw>
-<kw name="Go to Trading Market Page">
-<kw name="Wait and Click">
+<kw name="Go To Trade Market Page" owner="market_page">
+<kw name="Click Element when ready" owner="common">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-16T16:53:30.039073" level="INFO">Waited for Element with selector //button[@id='dropdown-basic' and .//div[normalize-space(.)='ตลาดซื้อขาย']] at state visible</msg>
+<msg time="2026-01-19T16:15:09.342285" level="INFO">Waited for Element with selector xpath=//button[@id='dropdown-basic' and .//div[normalize-space(.)='ตลาดซื้อขาย']] at state visible</msg>
 <arg>${locator}</arg>
 <arg>visible</arg>
 <arg>20s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-16T16:53:29.995737" elapsed="0.043336"/>
+<status status="PASS" start="2026-01-19T16:15:09.298378" elapsed="0.043907"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-16T16:53:30.041082" level="INFO">Clicks the element '//button[@id='dropdown-basic' and .//div[normalize-space(.)='ตลาดซื้อขาย']]'.</msg>
+<msg time="2026-01-19T16:15:09.342285" level="INFO">Clicks the element 'xpath=//button[@id='dropdown-basic' and .//div[normalize-space(.)='ตลาดซื้อขาย']]'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-16T16:53:30.039073" elapsed="0.064719"/>
+<status status="PASS" start="2026-01-19T16:15:09.342285" elapsed="0.078985"/>
 </kw>
-<arg>${lc_market_dropdown}</arg>
-<status status="PASS" start="2026-01-16T16:53:29.993718" elapsed="0.110074"/>
+<arg>${btn_home_market_menu}</arg>
+<status status="PASS" start="2026-01-19T16:15:09.298378" elapsed="0.122892"/>
 </kw>
-<kw name="Wait and Click">
+<kw name="Click Element when ready" owner="common">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-16T16:53:30.124726" level="INFO">Waited for Element with selector (//div[contains(@class,'HeaderNav_ItemTitle') and normalize-space(.)='ตลาดซื้อขาย'])[1] at state visible</msg>
+<msg time="2026-01-19T16:15:09.444400" level="INFO">Waited for Element with selector xpath=(//div[contains(@class,'HeaderNav_ItemTitle') and normalize-space(.)='ตลาดซื้อขาย'])[1] at state visible</msg>
 <arg>${locator}</arg>
 <arg>visible</arg>
 <arg>20s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-16T16:53:30.103792" elapsed="0.021947"/>
+<status status="PASS" start="2026-01-19T16:15:09.429319" elapsed="0.015081"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-16T16:53:30.126715" level="INFO">Clicks the element '(//div[contains(@class,'HeaderNav_ItemTitle') and normalize-space(.)='ตลาดซื้อขาย'])[1]'.</msg>
+<msg time="2026-01-19T16:15:09.444400" level="INFO">Clicks the element 'xpath=(//div[contains(@class,'HeaderNav_ItemTitle') and normalize-space(.)='ตลาดซื้อขาย'])[1]'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-16T16:53:30.125739" elapsed="0.328835"/>
+<status status="PASS" start="2026-01-19T16:15:09.444400" elapsed="0.391706"/>
 </kw>
-<arg>${lc_market_selection}</arg>
-<status status="PASS" start="2026-01-16T16:53:30.103792" elapsed="0.350782"/>
+<arg>${ddl_home_market}</arg>
+<status status="PASS" start="2026-01-19T16:15:09.421270" elapsed="0.414836"/>
 </kw>
-<kw name="Wait and Click">
+<kw name="Click Element when ready" owner="common">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-16T16:53:32.411318" level="INFO">Waited for Element with selector //a[@id='header_market'] at state visible</msg>
+<msg time="2026-01-19T16:15:11.811787" level="INFO">Waited for Element with selector xpath=//a[@id='header_market'] at state visible</msg>
 <arg>${locator}</arg>
 <arg>visible</arg>
 <arg>20s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-16T16:53:30.455668" elapsed="1.955650"/>
+<status status="PASS" start="2026-01-19T16:15:09.836106" elapsed="1.975681"/>
 </kw>
 <kw name="Click" owner="Browser">
-<msg time="2026-01-16T16:53:32.411318" level="INFO">Clicks the element '//a[@id='header_market']'.</msg>
+<msg time="2026-01-19T16:15:11.814602" level="INFO">Clicks the element 'xpath=//a[@id='header_market']'.</msg>
 <arg>${locator}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-16T16:53:32.411318" elapsed="0.204901"/>
+<status status="PASS" start="2026-01-19T16:15:11.811787" elapsed="0.532981"/>
 </kw>
-<arg>${lc_market_header}</arg>
-<status status="PASS" start="2026-01-16T16:53:30.454574" elapsed="2.163233"/>
+<arg>${btn_trade_market_menu}</arg>
+<status status="PASS" start="2026-01-19T16:15:09.836106" elapsed="2.508662"/>
 </kw>
-<status status="PASS" start="2026-01-16T16:53:29.992197" elapsed="2.625610"/>
+<status status="PASS" start="2026-01-19T16:15:09.296238" elapsed="3.048530"/>
 </kw>
-<kw name="Verify coins name in table">
+<kw name="Check Coin Name In Table" owner="market_feature">
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-16T16:53:32.630673" level="INFO">Waited for Element with selector //tbody at state visible</msg>
-<arg>${lc_market_table}</arg>
-<arg>visible</arg>
-<arg>20s</arg>
+<msg time="2026-01-19T16:15:12.464019" level="INFO">Waited for Element with selector xpath=//tbody at state visible</msg>
+<arg>${tbl_trade_market}</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-16T16:53:32.619351" elapsed="0.011322"/>
+<status status="PASS" start="2026-01-19T16:15:12.346777" elapsed="0.117242"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Format String" owner="String">
-<msg time="2026-01-16T16:53:37.679601" level="INFO">${row_locator} = //tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Bitcoin']]</msg>
+<msg time="2026-01-19T16:15:12.464019" level="INFO">${row_locator} = xpath=//tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Bitcoin']]</msg>
 <var>${row_locator}</var>
-<arg>${lc_row_by_coin_name}</arg>
+<arg>${tbl_trade_market_coin_name}</arg>
 <arg>${coin}</arg>
 <doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
-<status status="PASS" start="2026-01-16T16:53:32.631673" elapsed="5.047928"/>
+<status status="PASS" start="2026-01-19T16:15:12.464019" elapsed="0.000000"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-16T16:53:37.685722" level="INFO">Waited for Element with selector //tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Bitcoin']] at state visible</msg>
+<msg time="2026-01-19T16:15:12.497015" level="INFO">Waited for Element with selector xpath=//tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Bitcoin']] at state visible</msg>
 <arg>${row_locator}</arg>
-<arg>visible</arg>
-<arg>20s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.679601" elapsed="0.006121"/>
+<status status="PASS" start="2026-01-19T16:15:12.464019" elapsed="0.032996"/>
 </kw>
 <var name="${coin}">Bitcoin</var>
-<status status="PASS" start="2026-01-16T16:53:32.631673" elapsed="5.054049"/>
+<status status="PASS" start="2026-01-19T16:15:12.464019" elapsed="0.038012"/>
 </iter>
 <iter>
 <kw name="Format String" owner="String">
-<msg time="2026-01-16T16:53:37.692048" level="INFO">${row_locator} = //tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Ethereum']]</msg>
+<msg time="2026-01-19T16:15:12.502031" level="INFO">${row_locator} = xpath=//tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Ethereum']]</msg>
 <var>${row_locator}</var>
-<arg>${lc_row_by_coin_name}</arg>
+<arg>${tbl_trade_market_coin_name}</arg>
 <arg>${coin}</arg>
 <doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.685722" elapsed="0.006326"/>
+<status status="PASS" start="2026-01-19T16:15:12.502031" elapsed="0.000000"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-16T16:53:37.697763" level="INFO">Waited for Element with selector //tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Ethereum']] at state visible</msg>
+<msg time="2026-01-19T16:15:12.508387" level="INFO">Waited for Element with selector xpath=//tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Ethereum']] at state visible</msg>
 <arg>${row_locator}</arg>
-<arg>visible</arg>
-<arg>20s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.692048" elapsed="0.005715"/>
+<status status="PASS" start="2026-01-19T16:15:12.502031" elapsed="0.006356"/>
 </kw>
 <var name="${coin}">Ethereum</var>
-<status status="PASS" start="2026-01-16T16:53:37.685722" elapsed="0.012041"/>
+<status status="PASS" start="2026-01-19T16:15:12.502031" elapsed="0.006356"/>
 </iter>
 <iter>
 <kw name="Format String" owner="String">
-<msg time="2026-01-16T16:53:37.697763" level="INFO">${row_locator} = //tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Moo Deng']]</msg>
+<msg time="2026-01-19T16:15:12.513495" level="INFO">${row_locator} = xpath=//tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Moo Deng']]</msg>
 <var>${row_locator}</var>
-<arg>${lc_row_by_coin_name}</arg>
+<arg>${tbl_trade_market_coin_name}</arg>
 <arg>${coin}</arg>
 <doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.697763" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-19T16:15:12.508387" elapsed="0.005108"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-16T16:53:37.708738" level="INFO">Waited for Element with selector //tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Moo Deng']] at state visible</msg>
+<msg time="2026-01-19T16:15:12.521611" level="INFO">Waited for Element with selector xpath=//tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Moo Deng']] at state visible</msg>
 <arg>${row_locator}</arg>
-<arg>visible</arg>
-<arg>20s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.697763" elapsed="0.010975"/>
+<status status="PASS" start="2026-01-19T16:15:12.514054" elapsed="0.007557"/>
 </kw>
 <var name="${coin}">Moo Deng</var>
-<status status="PASS" start="2026-01-16T16:53:37.697763" elapsed="0.010975"/>
+<status status="PASS" start="2026-01-19T16:15:12.508387" elapsed="0.013224"/>
 </iter>
 <iter>
 <kw name="Format String" owner="String">
-<msg time="2026-01-16T16:53:37.711827" level="INFO">${row_locator} = //tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='USD Tether']]</msg>
+<msg time="2026-01-19T16:15:12.521611" level="INFO">${row_locator} = xpath=//tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='USD Tether']]</msg>
 <var>${row_locator}</var>
-<arg>${lc_row_by_coin_name}</arg>
+<arg>${tbl_trade_market_coin_name}</arg>
 <arg>${coin}</arg>
 <doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.708738" elapsed="0.003089"/>
+<status status="PASS" start="2026-01-19T16:15:12.521611" elapsed="0.000000"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-16T16:53:37.711827" level="INFO">Waited for Element with selector //tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='USD Tether']] at state visible</msg>
+<msg time="2026-01-19T16:15:12.530690" level="INFO">Waited for Element with selector xpath=//tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='USD Tether']] at state visible</msg>
 <arg>${row_locator}</arg>
-<arg>visible</arg>
-<arg>20s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.711827" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-19T16:15:12.521611" elapsed="0.009079"/>
 </kw>
 <var name="${coin}">USD Tether</var>
-<status status="PASS" start="2026-01-16T16:53:37.708738" elapsed="0.003089"/>
+<status status="PASS" start="2026-01-19T16:15:12.521611" elapsed="0.009079"/>
 </iter>
 <var>${coin}</var>
 <value>@{coin_names}</value>
-<status status="PASS" start="2026-01-16T16:53:32.630673" elapsed="5.081154"/>
+<status status="PASS" start="2026-01-19T16:15:12.464019" elapsed="0.066671"/>
 </for>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Selected Coin = ${coin_names}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-19T16:15:12.530690" elapsed="0.000000"/>
+</kw>
 <arg>Bitcoin</arg>
 <arg>Ethereum</arg>
 <arg>Moo Deng</arg>
 <arg>USD Tether</arg>
-<status status="PASS" start="2026-01-16T16:53:32.618334" elapsed="5.093493"/>
+<status status="PASS" start="2026-01-19T16:15:12.344768" elapsed="0.185922"/>
 </kw>
-<kw name="Verify coins price by name">
-<kw name="Get Coin Price">
+<kw name="Check Coin Price By Name" owner="market_feature">
+<kw name="Get Coin Price" owner="market_page">
 <kw name="Format String" owner="String">
-<msg time="2026-01-16T16:53:37.711827" level="INFO">${price_locator} = //tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Ethereum']]/td[2]</msg>
+<msg time="2026-01-19T16:15:12.530690" level="INFO">${price_locator} = xpath=//tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Ethereum']]/td[2]</msg>
 <var>${price_locator}</var>
-<arg>${lc_price_by_coin_name}</arg>
+<arg>${tbl_trade_market_coin_price}</arg>
 <arg>${coin_name}</arg>
 <doc>Formats a ``template`` using the given ``positional`` and ``named`` arguments.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.711827" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-19T16:15:12.530690" elapsed="0.000000"/>
 </kw>
 <kw name="Wait For Elements State" owner="Browser">
-<msg time="2026-01-16T16:53:37.711827" level="INFO">Waited for Element with selector //tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Ethereum']]/td[2] at state visible</msg>
+<msg time="2026-01-19T16:15:12.569685" level="INFO">Waited for Element with selector xpath=//tbody//tr[.//div[contains(@class,'text-product_h6') and normalize-space(.)='Ethereum']]/td[2] at state visible</msg>
 <arg>${price_locator}</arg>
-<arg>visible</arg>
-<arg>20s</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.711827" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-19T16:15:12.530690" elapsed="0.038995"/>
 </kw>
 <kw name="Get Text" owner="Browser">
-<msg time="2026-01-16T16:53:37.743449" level="INFO">Text: '103,814.13 THB'</msg>
-<msg time="2026-01-16T16:53:37.743449" level="INFO">${price} = 103,814.13 THB</msg>
+<msg time="2026-01-19T16:15:12.606755" level="INFO">Text: '100,424.09 THB'</msg>
+<msg time="2026-01-19T16:15:12.606755" level="INFO">${price} = 100,424.09 THB</msg>
 <var>${price}</var>
 <arg>${price_locator}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.711827" elapsed="0.031622"/>
+<status status="PASS" start="2026-01-19T16:15:12.569685" elapsed="0.037070"/>
 </kw>
 <return>
 <value>${price}</value>
-<status status="PASS" start="2026-01-16T16:53:37.743449" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-19T16:15:12.606755" elapsed="0.000000"/>
 </return>
-<msg time="2026-01-16T16:53:37.743449" level="INFO">${raw_price} = 103,814.13 THB</msg>
+<msg time="2026-01-19T16:15:12.606755" level="INFO">${raw_price} = 100,424.09 THB</msg>
 <var>${raw_price}</var>
 <arg>${coin_name}</arg>
-<status status="PASS" start="2026-01-16T16:53:37.711827" elapsed="0.031622"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Coin Name = ${coin_name}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.743449" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Raw Price = '${raw_price}'</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.743449" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-19T16:15:12.530690" elapsed="0.076065"/>
 </kw>
 <kw name="Remove String" owner="String">
-<msg time="2026-01-16T16:53:37.743449" level="INFO">${clean_price} = 103814.13 </msg>
+<msg time="2026-01-19T16:15:12.606755" level="INFO">${clean_price} = 100424.09 </msg>
 <var>${clean_price}</var>
 <arg>${raw_price}</arg>
 <arg>THB</arg>
 <arg>,</arg>
 <doc>Removes all ``removables`` from the given ``string``.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.743449" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>No THB = ${clean_price}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.743449" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-19T16:15:12.606755" elapsed="0.000000"/>
 </kw>
 <kw name="Convert To Number" owner="BuiltIn">
-<msg time="2026-01-16T16:53:37.743449" level="INFO">${clean_price} = 103814.13</msg>
+<msg time="2026-01-19T16:15:12.606755" level="INFO">${clean_price} = 100424.09</msg>
 <var>${clean_price}</var>
 <arg>${clean_price}</arg>
 <doc>Converts the given item to a floating point number.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.743449" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Price = ${clean_price}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.743449" elapsed="0.000000"/>
-</kw>
-<kw name="Evaluate" owner="BuiltIn">
-<msg time="2026-01-16T16:53:37.743449" level="INFO">${type} = float</msg>
-<var>${type}</var>
-<arg>type(${clean_price}).__name__</arg>
-<doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.743449" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>Price Type = ${type}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.743449" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-19T16:15:12.606755" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be True" owner="BuiltIn">
 <arg>${clean_price} &gt; ${min_price}</arg>
 <doc>Fails if the given condition is not true.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.743449" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-19T16:15:12.606755" elapsed="0.000000"/>
 </kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Total price = ${clean_price} &gt; ${min_price}</arg>
+<arg>Total price of ${coin_name} = ${clean_price} (&gt; ${min_price})</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.743449" elapsed="0.000000"/>
+<status status="PASS" start="2026-01-19T16:15:12.606755" elapsed="0.003589"/>
 </kw>
 <arg>Ethereum</arg>
 <arg>30000</arg>
-<status status="PASS" start="2026-01-16T16:53:37.711827" elapsed="0.031622"/>
+<status status="PASS" start="2026-01-19T16:15:12.530690" elapsed="0.079654"/>
 </kw>
-<kw name="Close Web">
+<kw name="Close Browser" owner="common">
 <kw name="Close Browser" owner="Browser">
-<msg time="2026-01-16T16:53:38.427591" level="INFO">Closed browser</msg>
+<msg time="2026-01-19T16:15:13.404089" level="INFO">Closed browser</msg>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-01-16T16:53:37.743449" elapsed="0.699234"/>
+<status status="PASS" start="2026-01-19T16:15:12.610344" elapsed="0.793745"/>
 </kw>
-<status status="PASS" start="2026-01-16T16:53:37.743449" elapsed="0.699234"/>
+<status status="PASS" start="2026-01-19T16:15:12.610344" elapsed="0.793745"/>
 </kw>
-<status status="PASS" start="2026-01-16T16:53:25.565300" elapsed="12.877970"/>
+<status status="PASS" start="2026-01-19T16:15:05.164148" elapsed="8.239941"/>
 </test>
-<status status="PASS" start="2026-01-16T16:53:25.386525" elapsed="13.078506"/>
+<status status="PASS" start="2026-01-19T16:15:04.931658" elapsed="8.503316"/>
 </suite>
 <statistics>
 <total>
@@ -337,10 +298,9 @@
 <tag>
 </tag>
 <suite>
-<stat name="MS 003" id="s1" pass="1" fail="0" skip="0">MS 003</stat>
+<stat name="TC 001" id="s1" pass="1" fail="0" skip="0">TC 001</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-01-16T16:53:25.380592" level="WARN">Error in file 'C:\Users\Pitinai.c\OneDrive - doppiotech.com\Documents\GitHub\automate-training\Milestone3\Testcases\MS_003.robot' on line 50: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>
